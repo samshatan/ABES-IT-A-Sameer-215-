@@ -1,0 +1,7 @@
+Difference between home.html and index.html
+where backend frontend and databases connectiont then use index.html
+only for html and css we use home.html static page
+
+head and url is maintain by head section
+indication of the web page :- title
+tag:- predefined structure to get the information

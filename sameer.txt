@@ -7,3 +7,6 @@ indication of the web page :- title
 tag:- predefined structure to get the information
 by default font size of Paragaraph tage it 16px
 by default font size of h1 tage it 32px
+heading is a block tag
+div is also a block tag
+id and class are the selectors that are used in css

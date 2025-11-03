@@ -1,3 +1,4 @@
+import './book.css';
 function Book(){
   return (
     <div id="book">

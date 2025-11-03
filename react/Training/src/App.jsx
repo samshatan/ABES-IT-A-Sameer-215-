@@ -1,12 +1,17 @@
 import './App.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Usestate from './components/Usestate';
+import Counter from './components/Counter';
 function App() {
 
   return (
     <div>
+      <Usestate/>
+      <br/>
+      <Counter/>
       <h3>TO DO LIST</h3>
-      <div class="container text-center">
+      <div className="container text-center">
         <input style={{margin: '6px'}} type="text" />
         <input style={{margin: '6px'}} type="text" name="" id="" />
         <button>Submit</button>

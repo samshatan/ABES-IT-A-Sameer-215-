@@ -3,11 +3,15 @@ import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Usestate from './components/Usestate';
 import Counter from './components/Counter';
+import Link1 from './components/Link1';
 function App() {
 
   return (
     <div>
-      <Usestate/>
+      <div>
+        <Link1/>
+      </div>
+      {/* <Usestate/>
       <br/>
       <Counter/>
       <h3>TO DO LIST</h3>
@@ -74,7 +78,7 @@ function App() {
             </Col>
           </Row>
         </Container>  
-      </div>
+      </div> */}
     </div>
   )
 }

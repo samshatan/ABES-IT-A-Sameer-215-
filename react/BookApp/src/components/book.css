@@ -1,6 +1,6 @@
-#book{
-  border: 5px solid red;
-  height: 300px;
-  width: 300px;
-  background-color: rgb(134, 58, 58);
+#book {
+    border: 5px solid red;
+    height: 350px;
+    width: 300px;
+    background-color: chocolate;
 }

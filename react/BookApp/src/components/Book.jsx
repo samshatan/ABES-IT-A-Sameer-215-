@@ -1,14 +1,29 @@
-import './book.css';
-function Book(){
-  return (
-    <div id="book">
-      <img src="https://www.google.com/imgres?q=book&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fb%2Fb6%2FGutenberg_Bible%252C_Lenox_Copy%252C_New_York_Public_Library%252C_2009._Pic_01.jpg&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBook&docid=9dPTCh_caY1RiM&tbnid=KJPdPTAATvOKXM&vet=12ahUKEwj804XwuNWQAxVJWHADHQvxCLIQM3oECBoQAA..i&w=1920&h=1200&hcb=2&ved=2ahUKEwj804XwuNWQAxVJWHADHQvxCLIQM3oECBoQAA" alt="" />
-      <h1>Title: Math</h1>
-      <h1>250</h1>
-      <button>+</button>
-      <span>0</span>
-      <button>-</button>
-    </div>
-  )
+import React, { useState } from 'react'
+import './book.css'
+function Book(props) {
+
+    const [count, setCount] = useState(0)
+    function increment() {
+        setCount(count + 1)
+    }
+
+    function decrement() {
+        setCount(count - 1)
+    }
+    return (
+        <div id="book">
+            <img src={props.img} alt="" height={170} width={170} />
+            <h1>Title:{props.title}</h1>
+            <h1>Price:{props.price}</h1>
+
+            <div>
+                <button onClick={increment}>+</button>
+                <span>{count}</span>
+                <button onClick={decrement}>-</button>
+            </div>
+
+        </div>
+    )
 }
+
 export default Book;

@@ -1,6 +1,6 @@
-#bookk {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  
+#adi {
+    text-align: center;
+    display: flex;
+    margin: auto;
+
 }

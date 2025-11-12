@@ -1,0 +1,9 @@
+#card{
+  border: 2px solid black;
+  height: 250px;
+  width: 300px;
+  text-align: center;
+  margin: 10px;
+  box-shadow: 5px 5px 5px grey;
+
+}

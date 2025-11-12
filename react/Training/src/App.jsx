@@ -4,13 +4,32 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Usestate from './components/Usestate';
 import Counter from './components/Counter';
 import Link1 from './components/Link1';
+import { useEffect, useState } from 'react';
+import Fashion from './components/Fashion';
+
 function App() {
+  const [fash, setFash] = useState([]);
+
+  useEffect(() => {
+    fetch('https://fakestoreapi.com/products')
+      .then(res => res.json())
+      .then(data => {
+        setFash(data);
+        console.log(data);
+      });
+  }, []);
+
 
   return (
     <div>
-      <div>
+      {
+        fash.map((f,i) => (
+          <Fashion key={i} props={f}/>
+        ))
+      }
+      {/* <div>
         <Link1/>
-      </div>
+      </div> */}
       {/* <Usestate/>
       <br/>
       <Counter/>

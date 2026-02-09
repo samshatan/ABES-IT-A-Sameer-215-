@@ -25,7 +25,7 @@
 // });
 
 const fs = require("fs");
-fs.writeFileSync("hello.txt","We are student of it");
+// fs.writeFileSync("hello.txt","We are student of it");
 // fs.writeFileSync("abes.txt","We are student of ABES");
 
 // const result = fs.readFileSync("./hello.txt","utf-8");
@@ -64,5 +64,15 @@ fs.writeFileSync("hello.txt","We are student of it");
 //   }
 //   else{
 //     console.log("File Copied");
+//   }
+// })
+
+// fs.unlinkSync("./hello.txt");
+// fs.unlink("./b1.txt",(err) => {
+//   if(err){
+//     console.log("Error",err);
+//   }
+//   else{
+//     console.log("File Deleted");
 //   }
 // })

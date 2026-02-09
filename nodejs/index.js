@@ -25,11 +25,44 @@
 // });
 
 const fs = require("fs");
-// fs.writeFileSync("hello.txt","We are student of it");
+fs.writeFileSync("hello.txt","We are student of it");
 // fs.writeFileSync("abes.txt","We are student of ABES");
 
-const result = fs.readFileSync("./hello.txt","utf-8");
-console.log(result);
+// const result = fs.readFileSync("./hello.txt","utf-8");
+// console.log(result);
 
-const result2 = fs.readFileSync("./abes.txt","utf-8");
-console.log(result2);
+// const result2 = fs.readFileSync("./abes.txt","utf-8");
+// console.log(result2);
+
+// fs.writeFile("Helloasync.txt","We are doung Async file system", () => {});
+
+// fs.readFile("./Helloasync.txt","utf-8",(err, re) => {
+//   if(err){
+//     console.log("Error",err);
+//   }
+//   else{
+//     console.log(re);
+//   }
+// })
+
+// fs.appendFileSync("./Helloasync.txt",`and i m happy`)
+
+// fs.appendFile("./Helloasync.txt",`and i m happy to do this`,(err) => {
+//   if(err){
+//     console.log("Error",err);
+//   }
+//   else{
+//     console.log("File Appended");
+//   }
+// })
+
+// fs.cpSync("./a1.txt","./b1.txt");
+// fs.cp("./a1.txt","./b1.txt",() => {})
+// fs.cp("./a1.txt","./b1.txt", (err) => {
+//   if(err){
+//     console.log("Error",err)
+//   }
+//   else{
+//     console.log("File Copied");
+//   }
+// })

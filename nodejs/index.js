@@ -76,3 +76,19 @@ const fs = require("fs");
 //     console.log("File Deleted");
 //   }
 // })
+
+
+// const student = {
+//   name: "Sameer",
+//   rollno: 215,
+//   city: "Ghaziabad",
+// }
+
+// const json = JSON.stringify(student);
+// console.log(json);
+
+// fs.writeFileSync("json.json",json,null,2);
+
+// const result = fs.readFileSync("./json.json","utf-8");
+// console.log(result);
+

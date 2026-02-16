@@ -92,3 +92,14 @@ const fs = require("fs");
 // const result = fs.readFileSync("./json.json","utf-8");
 // console.log(result);
 
+const os = require("os");
+
+console.log("platform",os.platform());
+console.log("Architecture",os.arch());
+console.log("Free Memory",os.freemem());
+console.log("Total Memory",os.totalmem());
+console.log("Uptime",os.uptime());
+console.log("Hostname",os.hostname());
+console.log("User Info",os.userInfo());
+console.log("home dir",os.homedir());
+console.log("temp dir",os.tmpdir());

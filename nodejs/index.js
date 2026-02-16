@@ -24,7 +24,7 @@
 //     console.log("Server Started at port 3000");
 // });
 
-const fs = require("fs");
+// const fs = require("fs");
 // fs.writeFileSync("hello.txt","We are student of it");
 // fs.writeFileSync("abes.txt","We are student of ABES");
 
@@ -92,14 +92,33 @@ const fs = require("fs");
 // const result = fs.readFileSync("./json.json","utf-8");
 // console.log(result);
 
-const os = require("os");
+// const os = require("os");
 
-console.log("platform",os.platform());
-console.log("Architecture",os.arch());
-console.log("Free Memory",os.freemem());
-console.log("Total Memory",os.totalmem());
-console.log("Uptime",os.uptime());
-console.log("Hostname",os.hostname());
-console.log("User Info",os.userInfo());
-console.log("home dir",os.homedir());
-console.log("temp dir",os.tmpdir());
+// console.log("platform",os.platform());
+// console.log("Architecture",os.arch());
+// console.log("Free Memory",os.freemem());
+// console.log("Total Memory",os.totalmem());
+// console.log("Uptime",os.uptime());
+// console.log("Hostname",os.hostname());
+// console.log("User Info",os.userInfo());
+// console.log("home dir",os.homedir());
+// console.log("temp dir",os.tmpdir());
+
+// file attachement
+
+const http = require("http");
+const fs = require("fs");
+const home = fs.readFileSync("abes.html");
+
+const myServer = http.createServer((req,res)=>{
+  // console.log("serv1");
+  // res.end("File Attached");
+  res.statusCode = 200;
+  // res.setHeader("Content-Type", "text/plain");
+  
+  res.end(home);
+});
+
+myServer.listen(3000,() =>{
+    console.log("Server Started at port 3000");
+});

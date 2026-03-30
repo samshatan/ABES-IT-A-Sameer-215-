@@ -1,0 +1,76 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "name": "Tesla Model 3",
+      "color": "White",
+      "price": 45000
+    },
+    {
+      "id": 2,
+      "name": "BMW X5",
+      "color": "Black",
+      "price": 65000
+    },
+    {
+      "id": 3,
+      "name": "Audi A4",
+      "color": "Silver",
+      "price": 52000
+    },
+    {
+      "id": 4,
+      "name": "Mercedes-Benz C-Class",
+      "color": "Blue",
+      "price": 55000
+    },
+    {
+      "id": 5,
+      "name": "Toyota Camry",
+      "color": "Red",
+      "price": 35000
+    },
+    {
+      "id": 6,
+      "name": "Honda Civic",
+      "color": "Gray",
+      "price": 28000
+    },
+    {
+      "id": 7,
+      "name": "Ford Mustang",
+      "color": "Yellow",
+      "price": 48000
+    },
+    {
+      "id": 8,
+      "name": "Chevrolet Corvette",
+      "color": "Red",
+      "price": 70000
+    },
+    {
+      "id": 9,
+      "name": "Volkswagen Golf",
+      "color": "White",
+      "price": 32000
+    },
+    {
+      "id": 10,
+      "name": "Mazda CX-5",
+      "color": "Silver",
+      "price": 38000
+    },
+    {
+      "id": 11,
+      "name": "Hyundai Elantra",
+      "color": "Black",
+      "price": 25000
+    },
+    {
+      "id": 12,
+      "name": "Kia Sportage",
+      "color": "Blue",
+      "price": 36000
+    }
+  ]
+}
